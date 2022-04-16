@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let surveyURL;
   let test;
 
-  if (document.URL.includes("csun-indscal")) {
+  if (document.URL.includes("csun-indscal") && !localStorage.getItem("csun")) {
     if (!localStorage.getItem("consent")) {
       if (!localStorage.getItem("subjectPool")) {
         window.location.href = "index.html";
+        localStorage.setItem("csun", "true")
       } else {
         window.location.href = "consent.html";
       }
