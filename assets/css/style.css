@@ -1,0 +1,44 @@
+body {
+  padding-bottom: 5rem;
+}
+
+#rating-div {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#debrief {
+  padding-top: 5rem;
+}
+
+#similar2 {
+  display: none;
+}
+
+.rating-btn {
+  border-radius: 4px;
+}
+
+.btn-outline-dark.focus, .btn-outline-dark:focus {
+  box-shadow: none;
+}
+
+.btn-outline-dark:hover {
+  color: #343a40;
+  background-color: transparent;
+}
+
+.form-padding {
+  padding-bottom: 40px;
+}
+
+@media all and (max-width: 575px) {
+
+  #similar {
+    display: none;
+  }
+
+  #similar2 {
+    display: block;
+  }
+}
