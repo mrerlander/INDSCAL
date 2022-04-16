@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let surveyURL;
   let test;
 
-  if (document.URL.includes("study.html")) {
+  if (document.URL.includes("csun-indscal")) {
     if (!localStorage.getItem("consent")) {
       if (!localStorage.getItem("subjectPool")) {
         window.location.href = "index.html";
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (checkBox) {
-    if(window.location.href.indexOf("UH-INDSCAL") != -1){
+    if(window.location.href.indexOf("uh-indscal") != -1){
       document.getElementById("hawaii").style.display = "block";
       localStorage.setItem('surveyURL', 'https://csunsbs.qualtrics.com/jfe/form/SV_6VZ7oMirqkA3clU?ID=');
       localStorage.setItem('test', 'UH-INDSCAL');
